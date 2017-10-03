@@ -37,7 +37,7 @@ class ScreenMain(LcarsScreen):
                         layer=3)
         all_sprites.add(LcarsText(colours.BLUE, (330, 174), "LOVELAND: MID OCTOBER", 1.5),
                         layer=3)
-        all_sprites.add(LcarsText(colours.BLUE, (330, 174), "VAIL:  NOVEMBER 17, 2017", 1.5),
+        all_sprites.add(LcarsText(colours.BLUE, (370, 174), "VAIL:  NOVEMBER 17, 2017", 1.5),
                         layer=3)
         self.info_text = all_sprites.get_sprites_from_layer(3)
 
