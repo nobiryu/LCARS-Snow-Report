@@ -29,13 +29,15 @@ class ScreenMain(LcarsScreen):
                         layer=1)
 
         # info text
-        all_sprites.add(LcarsText(colours.WHITE, (192, 174), "EVENT LOG:", 1.5),
+        all_sprites.add(LcarsText(colours.WHITE, (192, 174), "RESORT OPENING DAY:", 1.5),
                         layer=3)
-        all_sprites.add(LcarsText(colours.BLUE, (244, 174), "2 ALARM ZONES TRIGGERED", 1.5),
+        all_sprites.add(LcarsText(colours.BLUE, (244, 174), "WINTER PARK: NOVEMBER 15, 2017", 1.5),
                         layer=3)
-        all_sprites.add(LcarsText(colours.BLUE, (286, 174), "14.3 kWh USED YESTERDAY", 1.5),
+        all_sprites.add(LcarsText(colours.BLUE, (286, 174), "ARAPAHOE BASEN: MID OCTOBER", 1.5),
                         layer=3)
-        all_sprites.add(LcarsText(colours.BLUE, (330, 174), "1.3 Tb DATA USED THIS MONTH", 1.5),
+        all_sprites.add(LcarsText(colours.BLUE, (330, 174), "LOVELAND: MID OCTOBER", 1.5),
+                        layer=3)
+        all_sprites.add(LcarsText(colours.BLUE, (330, 174), "VAIL:  NOVEMBER 17, 2017", 1.5),
                         layer=3)
         self.info_text = all_sprites.get_sprites_from_layer(3)
 
