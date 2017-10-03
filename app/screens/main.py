@@ -15,9 +15,9 @@ class ScreenMain(LcarsScreen):
                         layer=0)
         
         # panel text
-        all_sprites.add(LcarsText(colours.BLACK, (15, 44), "LCARS 105"),
+        all_sprites.add(LcarsText(colours.BLACK, (15, 44), "SNOW REPORT"),
                         layer=1)
-        all_sprites.add(LcarsText(colours.ORANGE, (0, 135), "HOME AUTOMATION", 2),
+        all_sprites.add(LcarsText(colours.ORANGE, (0, 135), "COLORADO", 2),
                         layer=1)
         all_sprites.add(LcarsBlockMedium(colours.RED_BROWN, (145, 16), "LIGHTS"),
                         layer=1)
@@ -47,7 +47,7 @@ class ScreenMain(LcarsScreen):
         # buttons        
         all_sprites.add(LcarsButton(colours.RED_BROWN, (6, 662), "LOGOUT", self.logoutHandler),
                         layer=4)
-        all_sprites.add(LcarsButton(colours.BEIGE, (107, 127), "SENSORS", self.sensorsHandler),
+        all_sprites.add(LcarsButton(colours.RED, (107, 127), "WINTER PARK", self.sensorsHandler),
                         layer=4)
         all_sprites.add(LcarsButton(colours.PURPLE, (107, 262), "GAUGES", self.gaugesHandler),
                         layer=4)
@@ -57,7 +57,7 @@ class ScreenMain(LcarsScreen):
         # gadgets        
         all_sprites.add(LcarsGifImage("assets/gadgets/fwscan.gif", (277, 556), 100), layer=1)
         
-        self.sensor_gadget = LcarsGifImage("assets/gadgets/lcars_anim2.gif", (235, 150), 100) 
+        self.sensor_gadget = LcarsGifImage("https://www.winterparkresort.com/the-mountain/mountain-cams/snow-stake", (235, 150), 100) 
         self.sensor_gadget.visible = False
         all_sprites.add(self.sensor_gadget, layer=2)
 
