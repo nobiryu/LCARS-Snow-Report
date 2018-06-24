@@ -52,7 +52,7 @@ class ScreenAuthorize(LcarsScreen):
         ############
         # SET PIN CODE WITH THIS VARIABLE
         ############
-        self.pin = 7212
+        self.pin = 3764
         ############
         self.reset()
 
